@@ -1,13 +1,21 @@
 <template>
   <div class="font-sans text-gray-800">
 
-    <!-- Hero -->
-    <section class="relative bg-gray-50 h-[400px] bg-cover bg-center" style="background-image: url('/src/assets/office-image.jpg')">
-      <div class="absolute inset-0 bg-white bg-opacity-70 flex flex-col justify-center items-center text-center px-4">
-        <h1 class="text-3xl font-semibold mb-2">Welcome To Royal Diadem Group</h1>
-        <button class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Contact Us</button>
-      </div>
-    </section>
+  <!-- Hero Section -->
+<section
+  class="relative bg-gray-50 h-[400px] bg-cover bg-center"
+  :style="`background-image: url(${officeImage})`"
+>
+  <!-- White overlay + content -->
+  <div class="absolute inset-0 bg-white/70 flex flex-col justify-center items-center text-center px-4">
+    <h1 class="text-3xl font-semibold mb-2 text-gray-900">
+      Welcome To Royal Diadem Group
+    </h1>
+    <button class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
+      Contact Us
+    </button>
+  </div>
+</section>
 
     <!-- Subsidiaries -->
     <section class="bg-white py-10">
@@ -112,6 +120,7 @@
 <script setup>
 import SubsidiaryCard from '../../src/components/SubsidiaryCard.vue'
 import StatItem from '../../src/components/StatItem.vue'
+import officeImage from '@/assets/office-image.jpg'
 
 defineProps({
   apiKey: {
