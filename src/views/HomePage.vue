@@ -21,10 +21,10 @@
     <section class="bg-white py-10">
       <h2 class="text-center text-xl font-semibold mb-6">The following are subsidiaries of Royal Diadem Group</h2>
       <div class="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-6xl mx-auto px-4">
-        <SubsidiaryCard title="Royal Diadem Multibiz" description="Agricultural tractors & services." />
-        <SubsidiaryCard title="Aluminium & Glass" description="Windows, shower doors, etc." />
-        <SubsidiaryCard title="AutoTracker" description="Vehicle tracking services." />
-        <SubsidiaryCard title="Relationship Clinic" description="Building stronger relationships." />
+        <SubsidiaryCard  title="Royal Diadem Multibiz" description="Agricultural tractors & services." :imageSrc="card1Img" />
+        <SubsidiaryCard  :imageSrc="card2Img" title="Aluminium & Glass" description="Windows, shower doors, etc." />
+        <SubsidiaryCard  :imageSrc="card3Img" title="AutoTracker" description="Vehicle tracking services." />
+        <SubsidiaryCard  :imageSrc="card4Img" title="Relationship Clinic" description="Building stronger relationships." />
       </div>
     </section>
 
@@ -121,6 +121,13 @@
 import SubsidiaryCard from '../../src/components/SubsidiaryCard.vue'
 import StatItem from '../../src/components/StatItem.vue'
 import officeImage from '@/assets/office-image.jpg'
+
+import card1Img from '@/assets/card1Img.jpg'
+import card2Img from '@/assets/card2Img.jpg'
+import card3Img from '@/assets/card3Img.jpg'  
+import card4Img from '@/assets/card4Img.jpg'
+
+
 
 defineProps({
   apiKey: {
