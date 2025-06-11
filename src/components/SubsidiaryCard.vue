@@ -10,11 +10,13 @@
   <div class="relative z-10">
     <h3 class="text-lg font-bold mb-1">{{ title }}</h3>
     <p class="text-sm text-gray-700">{{ description }}</p>
-    <a href="#" class="text-blue-600 text-sm mt-2 inline-block">Learn More →</a>
+    <a 
+    :href="url" 
+    class="text-blue-600 text-sm mt-2 inline-block">Learn More →</a>
   </div>
 </div>
   </template>
   
   <script setup>
-  defineProps(['title', 'description', 'imageSrc'])
+  defineProps(['title', 'description', 'imageSrc', 'url'])
   </script>

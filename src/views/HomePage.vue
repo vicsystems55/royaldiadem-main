@@ -29,15 +29,22 @@
       <div class="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-6xl mx-auto px-4">
         <SubsidiaryCard
          data-aos="fade-up"
+         :url="`https://multibiz.royaldiademgroup.com`"
         title="Royal Diadem Multibiz" description="Agricultural tractors & services." :imageSrc="card1Img" />
         <SubsidiaryCard
          data-aos="fade-up"
+         :url="`https://alumin-glass.royaldiademgroup.com`"
+
         :imageSrc="card2Img" title="Aluminium & Glass" description="Windows, shower doors, etc." />
         <SubsidiaryCard
          data-aos="fade-up"
+         :url="`https://autotracker.royaldiademgroup.com`"
+
         :imageSrc="card3Img" title="AutoTracker" description="Vehicle tracking services." />
         <SubsidiaryCard
          data-aos="fade-up"
+         :url="`https://royaldiademgroup.com/clinic`"
+
         :imageSrc="card4Img" title="Relationship Clinic" description="Building stronger relationships." />
       </div>
     </section>
