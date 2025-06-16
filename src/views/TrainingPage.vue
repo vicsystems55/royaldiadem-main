@@ -22,7 +22,7 @@
 
         <!-- Image -->
         <div>
-          <img src="https://source.unsplash.com/featured/?classroom,learning" alt="Training" class="w-full rounded-lg shadow-md" />
+          <img src="/src/assets/training.png" alt="Training" class="w-full rounded-lg shadow-md" />
         </div>
       </div>
 

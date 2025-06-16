@@ -12,9 +12,9 @@
     <section class="py-16 px-6 md:px-20 bg-gray-50 text-center">
       <h2 class="text-2xl font-semibold text-gray-800 mb-10">What We Do</h2>
 
-      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
         <div v-for="(item, index) in services" :key="index" class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <img :src="item.image" :alt="item.title" class="w-full h-32 object-cover rounded-md mb-4" />
+          <img :src="item.image" :alt="item.title" class="w-full h-50 object-cover rounded-md mb-4" />
           <h3 class="text-lg font-medium text-gray-800">{{ item.title }}</h3>
         </div>
       </div>
@@ -39,18 +39,18 @@ export default {
   data() {
     return {
       services: [
-        { title: 'Emotional bonds', image: 'https://source.unsplash.com/featured/?emotion' },
-        { title: 'Reconnection with a partner', image: 'https://source.unsplash.com/featured/?couple' },
-        { title: 'Rebuild broken trust', image: 'https://source.unsplash.com/featured/?trust' },
-        { title: 'Communication', image: 'https://source.unsplash.com/featured/?communication' },
-        { title: 'Sexual challenges', image: 'https://source.unsplash.com/featured/?intimacy' },
-        { title: 'Breakup coping', image: 'https://source.unsplash.com/featured/?breakup' },
-        { title: 'Past traumas', image: 'https://source.unsplash.com/featured/?trauma' },
-        { title: 'Depression or anxiety', image: 'https://source.unsplash.com/featured/?depression' },
-        { title: 'Forgiveness', image: 'https://source.unsplash.com/featured/?forgiveness' },
-        { title: 'Healthy problem-solving', image: 'https://source.unsplash.com/featured/?solution' },
-        { title: 'Anger management', image: 'https://source.unsplash.com/featured/?anger' },
-        { title: 'Domestic violence', image: 'https://source.unsplash.com/featured/?violence' },
+        { title: 'Emotional bonds', image: '/src/assets/emotional.png' },
+        { title: 'Reconnection with a partner', image: '/src/assets/reconnection.png' },
+        { title: 'Rebuild broken trust', image: '/src/assets/trust.png' },
+        { title: 'Communication', image: '/src/assets/communication.png' },
+        { title: 'Sexual challenges', image: '/src/assets/sexual.png' },
+        { title: 'Breakup coping', image: '/src/assets/breakup.png' },
+        { title: 'Past traumas', image: '/src/assets/trauma.png' },
+        { title: 'Depression or anxiety', image: '/src/assets/depression.png' },
+        { title: 'Forgiveness', image: '/src/assets/forgiveness.png' },
+        { title: 'Healthy problem-solving', image: '/src/assets/solving.png' },
+        { title: 'Anger management', image: '/src/assets/anger.png' },
+        { title: 'Domestic violence', image: '/src/assets/voilence.png' },
       ]
     }
   }
